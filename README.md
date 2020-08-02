@@ -9,12 +9,14 @@ As shown in grid.txt idea is to have a arbitrarily defined grid using
 * 'c' for the initial camera position
 Example:
 ```
-0000000000
-0000000000
-0000****00
-0000****00
-0000000000
-0000000000
+00000000000
+00000000000
+00*******00
+00***c***00
+00*******00
+0000***0000
+00000000000
+00000000000
 ```
 ## Render
 Creates a 3D space for simple game prototyping
