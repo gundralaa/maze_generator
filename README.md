@@ -7,6 +7,7 @@ As shown in grid.txt idea is to have a arbitrarily defined grid using
 * '0' for an empty space
 * '*' for a closed space
 * 'c' for the initial camera position
+
 Example:
 ```
 00000000000
