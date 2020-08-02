@@ -1,0 +1,45 @@
+Map Generator
+Objective:
+Generate an OpenGL window environment using a predefined txt file coordinate file
+noting closed off areas and open non walled areas
+
+ex:
+input as follows
+(dimensions xy)
+000000000000000000000
+0000000********000000
+0000000********000000
+0000000***c****000000
+0000000********000000
+000000000000000000000
+
+* = chamber
+c = camera
+0 = space
+
+draw simple walls at every start and end of a **** row
+	some defined height
+	textured
+	two triangles using element buffer
+generate camera movable or place sprite movable in map
+
+classes
+
+camera
+	control the view matrix to interact with shaders
+shader
+	generate shader program
+	write - shaders
+	easily interface
+wall
+	defines buffer for a single wall segment
+	defines textures for single wall segment
+window
+	creates window
+	controls input
+readers
+	reads input file and creates wall objects
+main
+	uses reader to take file
+	renders the wall segements
+
