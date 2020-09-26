@@ -10,7 +10,7 @@
 
 
 wall::wall(shader* p, window* win) {
-	load_texture("container.jpg");
+	load_texture("assets/container.jpg");
 	win_ptr = win;
 	prog_ptr = p;
 	prog_ptr->use();
