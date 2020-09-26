@@ -19,6 +19,23 @@ Example:
 00000000000
 00000000000
 ```
+
+## Usage
+Download the source libraries for GLFW GLAD and GLM and edit CMakeLists.txt LIB_DIR var to point to a directory
+that stores all of the libraries sources.
+Run the following in thee root directory:
+```
+mkdir build
+cd build
+cmake ..
+make
+mv MazeGenerator ../
+```
+After moving the built executable to root run the executable in root to access shader files and textures.
+**Only Run Executable in Root Directory**
+```
+./MazeGenerator
+```
 ## Render
 Creates a 3D space for simple game prototyping
 ![Render Demo](/render.gif)
