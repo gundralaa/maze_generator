@@ -1,6 +1,6 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <glm/glm/glm.hpp>
+#include <glm/glm.hpp>
 #include "window.h"
 #include "generator.h"
 #include "shader.h"
@@ -12,9 +12,9 @@ int main() {
 	tile_map.find_wall_pos();
 	window win = window("Test");
 	// wall
-	shader wall_shader = shader("wallv_shader.txt", "wallf_shader.txt");
+	shader wall_shader = shader("./shaders/wallv_shader.txt", "./shaders/wallf_shader.txt");
 	// floor
-	shader floor_shader = shader("tilev_shader.txt", "tilef_shader.txt");
+	shader floor_shader = shader("./shaders/tilev_shader.txt", "./shaders/tilef_shader.txt");
 	wall seg_buf = wall(&wall_shader, &win);
 	tile tile_buf = tile(&floor_shader, &win);
 	// cam

@@ -1,7 +1,7 @@
 #ifndef GENERATOR_H
 #define GENERATOR_H
 
-#include <glm/glm/glm.hpp>
+#include <glm/glm.hpp>
 #include <string>
 #include <vector>
 #include "window.h"
